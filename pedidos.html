@@ -4,30 +4,32 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <link rel='stylesheet' type='text/css' media='screen' href='pedidos.css'>
 
-    <title>Tesla</title>
+    <title>Tesla Pedidos</title>
     <link rel="icon" href="tesla_icon.png">
 
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <script src='main.js'></script>
 
-    <img src="logo.png" width="120px" height="100px">
-    <h1>Tesla</h1>
-
 </head>
 <nav>
-    <a href="index.html">Inicio</a>
-    <a href="pedidos.html">Realizar Pedido</a>
-    <a href="noticias.html">Noticias</a>
+    <img id="logo" src="logo.png">
+    <div id="menu">
+        <a href="index.html">Inicio</a>
+        <a href="pedidos.html">Realizar Pedido</a>
+        <a href="noticias.html">Noticias</a>
+    </div>
+
 </nav>
 
 <body>
     <section>
-        <h1>Formulario para realizar el Pedido</h1>
+        <h2>Formulario para realizar el Pedido</h2>
         <form action="procesarPeticion.jsp" method="post">
 
-            <fieldset>
+            <fieldset id="formulario">
                 <legend>Datos Pedido:</legend>
 
                 <label for="nombre">Nombre: </label>
@@ -68,8 +70,8 @@
     </section>
 </body>
 <footer>
-    <p>Todos los derechos reservados Tesla copyright 2022 &copy;</p>
-    <img src="tesla_icon.png">
+    <img id="imagenfooter" src="tesla_icon.png">
+    <p id="pfooter">Todos los derechos reservados Tesla copyright 2022 &copy;</p>
 </footer>
 
 </html>

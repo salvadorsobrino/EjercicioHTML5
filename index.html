@@ -1,54 +1,59 @@
 <!DOCTYPE html>
 <html>
-
 <head>
+
+    <!-- El elemento HTML <head> provee información general (metadatos) acerca del documento, 
+        incluyendo su título y enlaces a scripts y hojas de estilos.-->
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <link rel='stylesheet' type='text/css' media='screen' href='index.css'>
 
-    <title>Tesla</title>
+    <title>Tesla Home</title>
     <link rel="icon" href="tesla_icon.png">
 
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <script src='main.js'></script>
 
-    <img src="logo.png" width="120px" height="100px">
-    <h1>Tesla</h1>
-
 </head>
+
 <nav>
-    <a href="index.html">Inicio</a>
-    <a href="pedidos.html">Realizar Pedido</a>
-    <a href="noticias.html">Noticias</a>
+    <img id="logo" src="logo.png">
+    <div id="menu">
+        <a href="index.html">Inicio</a>
+        <a href="pedidos.html">Realizar Pedido</a>
+        <a href="noticias.html">Noticias</a>
+    </div>
+
 </nav>
 
 <body>
     <section>
-        <article>
+        <article id="lista">
             <h2>Lista ordenada de coches</h2>
             <ol>
-                <li><b><a href="https://www.tesla.com/es_es/modely/design#overview" target ="_blank">Model Y</a></b>
+                <li><b><a href="https://www.tesla.com/es_es/modely/design#overview" target="_blank">Model Y</a></b>
                     <ul>
                         <li>553km Autonomía</li>
                         <li>217km/h Velocidad máxima</li>
                         <li>5,0s 0-100 km/h</li>
                     </ul>
                 </li>
-                <li><b><a href="https://www.tesla.com/es_es/model3/design#overview" target ="_blank">Model 3</a></b>
+                <li><b><a href="https://www.tesla.com/es_es/model3/design#overview" target="_blank">Model 3</a></b>
                     <ul>
                         <li>491km Autonomía</li>
                         <li>225km/h Velocidad máxima</li>
                         <li>6,1s 0-100 km/h</li>
                     </ul>
                 </li>
-                <li><b><a href="https://www.tesla.com/es_es/models/design#overview" target ="_blank">Model S</a></b>
+                <li><b><a href="https://www.tesla.com/es_es/models/design#overview" target="_blank">Model S</a></b>
                     <ul>
                         <li>652km Autonomía</li>
                         <li>250km/h Velocidad máxima</li>
                         <li>3,2s 0-100 km/h</li>
                     </ul>
                 </li>
-                <li><b><a href="https://www.tesla.com/es_es/modelx/design#overview" target ="_blank">Model X</a></b>
+                <li><b><a href="https://www.tesla.com/es_es/modelx/design#overview" target="_blank">Model X</a></b>
                     <ul>
                         <li>560km Autonomía</li>
                         <li>250km/h Velocidad máxima</li>
@@ -57,38 +62,38 @@
                 </li>
             </ol>
         </article>
-        <article>
+        <article id="imagen">
             <img src="modelos.jpg" width="400px" height="250px">
         </article>
     </section>
 
-    <section>
-        <table border="1">
+    <section id="precios">
+        <table class="cuadrado">
             <caption>
                 <h2>Lista de precios</h2>
             </caption>
-            <thead>
-                <tr>
-                    <th>ModelY</th>
-                    <th>Model3</th>
-                    <th>ModelS</th>
-                    <th>ModelX</th>
+            <thead >
+                <tr class="cuadrado">
+                    <th class="cuadrado">ModelY</th>
+                    <th class="cuadrado">Model3</th>
+                    <th class="cuadrado">ModelS</th>
+                    <th class="cuadrado">ModelX</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>64.000€</td>
-                    <td>46.990€</td>
-                    <td>80.675€</td>
-                    <td>89.870€</td>
+                    <td class="cuadrado">64.000€</td>
+                    <td class="cuadrado">46.990€</td>
+                    <td class="cuadrado" >80.675€</td>
+                    <td class="cuadrado">89.870€</td>
                 </tr>
             </tbody>
         </table>
     </section>
 </body>
 <footer>
-    <p>Todos los derechos reservados Tesla copyright 2022 &copy;</p>
-    <img src="tesla_icon.png">
+    <img id="imagenfooter" src="tesla_icon.png">
+    <p id="pfooter">Todos los derechos reservados Tesla copyright 2022 &copy;</p>
 </footer>
 
 </html>
