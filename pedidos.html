@@ -16,58 +16,64 @@
 </head>
 <nav>
     <img id="logo" src="logo.png">
-    <div id="menu">
-        <a href="index.html">Inicio</a>
-        <a href="pedidos.html">Realizar Pedido</a>
-        <a href="noticias.html">Noticias</a>
-    </div>
+    <ul>
+        <li class="menu">
+            <a href="index.html">Inicio</a>
+        </li>
+        <li class="menu">
+            <a href="pedidos.html">Realizar Pedido</a>
+        </li>
+        <li class="menu">
+            <a href="noticias.html">Noticias</a>
+        </li>
+
+    </ul>
 
 </nav>
 
 <body>
-    <section>
-        <h2>Formulario para realizar el Pedido</h2>
-        <form action="procesarPeticion.jsp" method="post">
+    <main>
+        <section id="formulario">
+            <h2>Formulario para realizar el Pedido</h2>
+            <form action="procesarPeticion.jsp" method="post">
+                <fieldset id="cuadro">
+                    <legend>Datos del Pedido:</legend>
+                    <label class="datospedido" for="nombre">Nombre: </label>
+                    <input class="datospedido" id="nombre" type="text" name="nombre" placeholder="Escriba su nombre"
+                        required />
+                    <label class="datospedido" for="dni">DNI: </label>
+                    <input class="datospedido" id="dni" type="text" name="dni" placeholder="Escriba su DNI" required />
+                    <label class="datospedido" for="email">Email: </label>
+                    <input class="datospedido" id="email" type="email" name="email" placeholder="Escriba su email"
+                        required />
+                    <label class="datospedido" for="telefono">Teléfono: </label>
+                    <input class="datospedido" id="telefono" type="tel" name="telefono"
+                        placeholder="Escriba su número de tel" required />
 
-            <fieldset id="formulario">
-                <legend>Datos Pedido:</legend>
-
-                <label for="nombre">Nombre: </label>
-                <input id="nombre" type="text" name="nombre" placeholder="Escriba su nombre" autofocus required />
-                <br>
-                <label for="dni">DNI: </label>
-                <input id="dni" type="text" name="dni" placeholder="Escriba su DNI" required />
-                <br>
-                <label for="email">Email: </label>
-                <input id="email" type="email" name="email" placeholder="Escriba su email" required />
-                <br>
-                <label for="telefono">Teléfono: </label>
-                <input id="telefono" type="tel" name="telefono" placeholder="Escriba su número de tel" required />
-                <br>
-
-                <label for="modelo">Escoja el modelo de coche: </label>
-                <select id="modelo" name="modelo">
-                    <option value="Y">ModeloY</option>
-                    <option value="3">Modelo3</option>
-                    <option value="S">ModeloS</option>
-                    <option value="X">ModeloX</option>
-                </select>
-                <br>
-                <label for="date">Seleccione la fecha en la que nos pondremos en contacto con usted: </label>
-                <input id="date" type="date" name="date" required/>
-                <br>
-                <label for="observaciones">Observaciones: </label>
-                <br>
-                <textarea id="observaciones" style="resize: none;" rows="5" cols="80" name="observaciones" placeholder="Por ejemplo horario de la llamada"></textarea>
-                <br>
-                <label for="terminos">¿Acepta los terminos y condiciones de uso?</label>
-                He leído y acepto los terminos y condiciones de uso<input type="checkbox" name="terminos" value="Y" />
-                <br>
-                <input type="submit" value="Enviar datos" />
-                <input type="reset" value="Limpiar formulario" />
-            </fieldset>
-        </form>
-    </section>
+                    <label for="modelo">Escoja el modelo de coche: </label>
+                    <select id="modelo" name="modelo">
+                        <option value="S">ModeloS</option>
+                        <option value="3">Modelo3</option>
+                        <option value="X">ModeloX</option>
+                        <option value="Y">ModeloY</option>
+                    </select>
+                    <label class="datospedido" for="date">Seleccione la fecha en la que nos pondremos en contacto con
+                        usted: </label>
+                    <input id="date" type="date" name="date" required />
+                    <div id="finalformulario">
+                        <label class="datospedido" for="observaciones">Observaciones: </label>
+                        <textarea id="observaciones" style="resize: none;" rows="5" cols="80" name="observaciones"
+                            placeholder="Por ejemplo horario de la llamada"></textarea>
+                        <label class="datospedido" for="terminos">¿Acepta los terminos y condiciones de uso?</label>
+                        He leído y acepto los terminos y condiciones de uso<input type="checkbox" name="terminos"
+                            value="Y" />
+                        <input type="submit" value="Enviar datos" />
+                        <input type="reset" value="Limpiar formulario" />
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+    </main>
 </body>
 <footer>
     <img id="imagenfooter" src="tesla_icon.png">

@@ -21,17 +21,25 @@
 </head>
 <nav>
     <img id="logo" src="logo.png">
-    <div id="menu">
-        <a href="index.html">Inicio</a>
-        <a href="pedidos.html">Realizar Pedido</a>
-        <a href="noticias.html">Noticias</a>
-    </div>
+    <ul>
+        <li class="menu">
+            <a href="index.html">Inicio</a>
+        </li>
+        <li class="menu">
+            <a href="pedidos.html">Realizar Pedido</a>
+        </li>
+        <li class="menu">
+            <a href="noticias.html">Noticias</a>
+        </li>
+
+    </ul>
 
 </nav>
 
 <body>
+    <main>
+        <h2>Sección de noticias de Tesla</h2>
         <section id="noticias">
-            <h2>Sección de noticias de Tesla</h2>
             <article>
                 <h3>La Gigafactoría europea de Tesla ya tiene luz verde oficialmente: sólo queda un paso más</h3>
                 <p>La Oficina Estatal de Medio Ambiente de Potsdam (LfU) ha concedido el visto bueno de manera oficial
@@ -43,13 +51,13 @@
                     pero también la oposición pública de diversos grupos ecologistas, preocupados por el impacto
                     medioambiental que tendrá
                     la fábrica, y el parón de las obras durante la pandemia.</p>
-                <img src="noticia1.jpg" width="420px" height="300px">
+                <img id="cuadrado" src="noticia1.jpg" width="420px" height="300px">
                 <br>
                 <a href="https://www.hibridosyelectricos.com/articulo/actualidad/gigafactoria-tesla-berlin-recibe-oficialmente-permisos-construccion/20220303145059055166.html"
                     target="_blank">Leer más</a>
 
             </article>
-            <article>
+            <article id="segundanoticia">
                 <h3>Los supercargadores de Tesla alrededor de Ucrania están disponibles gratis para todos los coches
                     eléctricos que huyen del conflicto</h3>
                 <p>La invasión de Rusia a Ucrania está ocasionando consecuencias nefastas tanto para el precio de los
@@ -58,7 +66,7 @@
                     conflicto.
                     Pero también ha
                     traído consigo iniciativas con la caridad por bandera y Tesla se ha sumado a ello.</p>
-                <img src="noticia2.jpeg" width="420px" height="300px">
+                <img id="cuadradocentrado" src="noticia2.jpeg" width="420px" height="300px">
                 <p>Y es que la firma de coches eléctricos ha anunciado a los propietarios de sus modelos en Ucrania que,
                     desde este lunes,
                     ofrece la carga gratuita para coches eléctricos y enchufables en los supercargadores fronterizos de
@@ -67,6 +75,7 @@
                     target="_blank">Leer más</a>
             </article>
         </section>
+    </main>
 </body>
 <footer>
     <img id="imagenfooter" src="tesla_icon.png">
