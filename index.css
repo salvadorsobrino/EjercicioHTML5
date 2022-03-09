@@ -169,6 +169,16 @@ footer {
 
 @media screen and (max-width: 700px) {
 
+    nav {
+
+        background: linear-gradient(left, rgb(125, 0, 0), red, white);
+        /* Para Firefox*/
+        background: -webkit-linear-gradient(left, rgb(125, 0, 0), red, white);
+        /* Para Chromium*/
+
+    }
+
+
     #logo {
         width: 100px;
 
